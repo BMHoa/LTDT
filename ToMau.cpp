@@ -1,6 +1,7 @@
 #include<iostream>
 #include<fstream>
 #define MAX 100
+// oke xong roi nhe
 using namespace std;
 void docDoThi(int A[][MAX], int &n){
 	fstream file("ToMau.txt", ios::in);
@@ -12,6 +13,7 @@ void docDoThi(int A[][MAX], int &n){
 	}
 	file.close();
 }
+// huy da sua xong phan xuat file
 void XuatFile(int A[][MAX], int n){
 	for(int i  = 1; i<=n; i++){
 		for(int j = 1; j<=n ; j++){
@@ -25,7 +27,7 @@ void XuatMau(int A[], int n){
 		cout<<A[i]<<" ";
 	}
 }
-
+// thanh hung da sua xong phan tomau
 void ToMau(int A[][MAX], int n, int MAU[]){
 	int BangMau[MAX][MAX] = {0};
 	int mauvuato;
@@ -47,6 +49,7 @@ void ToMau(int A[][MAX], int n, int MAU[]){
 	}	
 }
 int main(){
+	// nhon hoa da sua xong phan main nay .. 
 	int A[MAX][MAX], n, MAU[MAX];
 	docDoThi(A, n);
 	XuatFile(A, n);
